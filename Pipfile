@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+factory-boy = "*"
+
+[packages]
+djangorestframework = "*"
+django-elasticsearch-dsl = "*"
+django-elasticsearch-dsl-drf = "*"
+pillow = "*"
+wemake-python-styleguide = "*"
+isort = "<5.0.0"
+pre-commit = "*"
+django-extensions = "*"
+django-debug-toolbar = "*"
+
+[requires]
+python_version = "3.8"
