@@ -17,8 +17,11 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import include, path
 
+from .router import router
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', include(router.urls)),
 ]
 
 if settings.DEBUG:  # pragma: no cover

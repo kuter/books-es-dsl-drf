@@ -16,6 +16,8 @@ isort = "<5.0.0"
 pre-commit = "*"
 django-extensions = "*"
 django-debug-toolbar = "*"
+markdown = "*"
+django-filter = "*"
 
 [requires]
 python_version = "3.8"
