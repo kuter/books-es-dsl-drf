@@ -5,19 +5,20 @@ verify_ssl = true
 
 [dev-packages]
 factory-boy = "*"
-
-[packages]
-djangorestframework = "*"
-django-elasticsearch-dsl = "*"
-django-elasticsearch-dsl-drf = "*"
-pillow = "*"
-wemake-python-styleguide = "*"
 isort = "<5.0.0"
 pre-commit = "*"
-django-extensions = "*"
+wemake-python-styleguide = "*"
+
+[packages]
 django-debug-toolbar = "*"
-markdown = "*"
+django-elasticsearch-dsl = "*"
+django-elasticsearch-dsl-drf = "*"
+django-extensions = "*"
 django-filter = "*"
+djangorestframework = "*"
+markdown = "*"
+pillow = "*"
+psycopg2-binary = ">=2.8"
 
 [requires]
 python_version = "3.8"
