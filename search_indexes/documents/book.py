@@ -14,39 +14,27 @@ INDEX.settings(
     number_of_replicas=1,
 )
 
-html_strip = analyzer(
-    'html_strip',
-    tokenizer='standard',
-    # filter=['lowercase', 'stop', 'snowball'],
-    # char_filter=['html_strip']
-)
-
 
 @INDEX.doc_type
 class BookDocument(Document):
     """Book Elasticsearch document."""
 
     id = fields.IntegerField(attr='id')
-
-    title = fields.KeywordField(
-        #analyzer=html_strip,
-        # fields={
-        #     'raw': fields.KeywordField(analyzer='keyword'),
-        # }
+    title = fields.TextField(
+        fields={
+            'raw': fields.KeywordField(),
+        }
+    )
+    description = fields.TextField(
+        fields={
+            'raw': fields.KeywordField(),
+        }
     )
 
-    description = fields.KeywordField(
-        #analyzer=html_strip,
-        # fields={
-        #     'raw': fields.KeywordField(analyzer='keyword'),
-        # }
-    )
-
-    summary = fields.KeywordField(
-        #analyzer=html_strip,
-        # fields={
-        #     'raw': fields.KeywordField(analyzer='keyword'),
-        # }
+    summary = fields.TextField(
+        fields={
+            'raw': fields.KeywordField(),
+        }
     )
 
     publisher = fields.KeywordField(
@@ -59,11 +47,10 @@ class BookDocument(Document):
 
     publication_date = fields.DateField()
 
-    state = fields.KeywordField(
-        #analyzer=html_strip,
-        # fields={
-        #     'raw': fields.KeywordField(analyzer='keyword'),
-        # }
+    state = fields.TextField(
+        fields={
+            'raw': fields.KeywordField(),
+        }
     )
 
     isbn = fields.KeywordField(
