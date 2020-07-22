@@ -1,4 +1,0 @@
-from rest_framework import routers
-
-from books import views as book_views
-from accounts import views as accounts_views
