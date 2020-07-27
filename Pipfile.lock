@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "54d3f7c844c6a518df56ec42b3ce720f4311aeba782ed303265d85cc40596fd3"
+            "sha256": "781eb41b9ba12528fc3dbe160800cb323996c60adfbf2f79f3257f35c1b20683"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -44,6 +44,13 @@
             ],
             "index": "pypi",
             "version": "==2.2"
+        },
+        "django-elasticsearch-debug-toolbar": {
+            "hashes": [
+                "sha256:fa9ab66f0c3e48a5877523506e72c1111982ff4bb4643fe260a53737815b797f"
+            ],
+            "index": "pypi",
+            "version": "==2.0.0"
         },
         "django-elasticsearch-dsl": {
             "hashes": [
@@ -256,10 +263,10 @@
         },
         "darglint": {
             "hashes": [
-                "sha256:b37be3bea80d25fa015c002ab63d4100a676441dbb75af7cd1df69b1b9324d5f",
-                "sha256:cb845b4cd046c9073be1f24935b6609abdc521270669ed7370ca0cdb112a7e1c"
+                "sha256:049a98cf3aec8cf6ea344a863c68112d80b7f8de214459b5fa6853371f89c3e7",
+                "sha256:6b9461f96694c2cf1d8edb1597a783fe6840953b0eb18cc6cc1e72a26f196d79"
             ],
-            "version": "==1.5.1"
+            "version": "==1.5.2"
         },
         "distlib": {
             "hashes": [
@@ -580,10 +587,10 @@
         },
         "virtualenv": {
             "hashes": [
-                "sha256:26cdd725a57fef4c7c22060dba4647ebd8ca377e30d1c1cf547b30a0b79c43b4",
-                "sha256:c51f1ba727d1614ce8fd62457748b469fbedfdab2c7e5dd480c9ae3fbe1233f1"
+                "sha256:688a61d7976d82b92f7906c367e83bb4b3f0af96f8f75bfcd3da95608fe8ac6c",
+                "sha256:8f582a030156282a9ee9d319984b759a232b07f86048c1d6a9e394afa44e78c8"
             ],
-            "version": "==20.0.27"
+            "version": "==20.0.28"
         },
         "wemake-python-styleguide": {
             "hashes": [

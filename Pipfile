@@ -19,6 +19,7 @@ djangorestframework = "*"
 markdown = "*"
 pillow = "*"
 psycopg2-binary = ">=2.8"
+django-elasticsearch-debug-toolbar = "*"
 
 [requires]
 python_version = "3.8"
