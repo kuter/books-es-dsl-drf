@@ -8,8 +8,11 @@ class NumberInFilter(filters.BaseInFilter, filters.NumberFilter):
 
 
 class BookFilter(filters.FilterSet):
-    id__in = NumberInFilter(field_name="id", lookup_expr='in')
+    id__in = NumberInFilter(field_name='id', lookup_expr='in')
+    title__contains = filters.CharFilter(
+        field_name='title', lookup_expr='icontains'
+    )
 
     class Meta:
         model = Book
-        fields = ('price', 'id__in')
+        fields = ('title__contains', 'id__in')
