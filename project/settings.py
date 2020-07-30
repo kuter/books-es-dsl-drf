@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'elastic_panel',
     'django_extensions',
+    'django_filters',
     'rest_framework',
     'django_elasticsearch_dsl',
     'django_elasticsearch_dsl_drf',
