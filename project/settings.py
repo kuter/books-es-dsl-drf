@@ -85,17 +85,13 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432,
     }
-    #'default': {
-        #'ENGINE': 'django.db.backends.postgresql',
-        #'NAME': 'postgres',
-        #'USER': 'postgres',
-        #'PASSWORD': 'postgres',
-        #'HOST': 'db',
-        #'PORT': 5432,
-    #}
 }
 
 
@@ -190,5 +186,7 @@ try:
     from local_settings import *  # noqa
     if 'apply_settings' in globals():
         apply_settings(globals())
-except (ImportError, NameError):
+except ImportError:
     pass
+except:  # noqa: E722
+    raise
