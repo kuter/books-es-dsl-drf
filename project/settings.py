@@ -186,5 +186,7 @@ try:
     from local_settings import *  # noqa
     if 'apply_settings' in globals():
         apply_settings(globals())
-except (ImportError, NameError):
+except ImportError:
     pass
+except:  # noqa: E722
+    raise
