@@ -6,6 +6,7 @@ from search_indexes import views as search_indexes_views
 
 router = routers.DefaultRouter()
 router.register('books', book_views.BookViewSet)
+router.register('publishers', book_views.PublisherViewSet)
 router.register('users', accounts_views.UserViewSet)
 router.register(
     'search', search_indexes_views.BookDocumentView, basename='bookdocument'
