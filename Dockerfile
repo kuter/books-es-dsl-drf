@@ -5,7 +5,6 @@ COPY Pipfile* /
 RUN pipenv lock --requirements > /requirements/base.txt
 RUN pipenv lock --dev --requirements > /requirements/dev.txt
 
-
 FROM python:3.8-alpine
 RUN apk add \
     postgresql-dev \
