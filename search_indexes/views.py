@@ -32,6 +32,7 @@ class BookDocumentView(BaseDocumentViewSet):
     document = BookDocument
     serializer_class = BookDocumentSerializer
     pagination_class = PageNumberPagination
+    ignore = [404]
     lookup_field = 'id'
     filter_backends = [
         FilteringFilterBackend,
